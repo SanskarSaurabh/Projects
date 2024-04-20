@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Liquid Drop Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="drop">
+            <div class="content">
+                <h2>Sign in</h2>
+                <form>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Username" id="txt">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="password" placeholder="Password" id="password">
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="submit" value="Login" onclick="login()">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <a href="#" class="btns">Forget Password</a>
+        <a href="#" class="btns signup">SignUp</a>
+    </div>
+    
+    <script> function login() {
+            var txt = document.getElementById('txt').value
+            var password = document.getElementById('password').value
+            if (txt == "sm" && password == "123") {
+                document.write("You are loggedIN")
+            }
+            else {
+                alert("Enter a valid ID")
+            }
+        }
+    </script>
+</body>
+
+</html>
